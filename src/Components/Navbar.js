@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar(props) {
   return (
     <div classNameNameName="navbar">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.title}
@@ -28,7 +28,7 @@ export default function Navbar(props) {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">
-                  About
+                  {props.about}
                 </a>
               </li>
             </ul>
@@ -49,9 +49,3 @@ export default function Navbar(props) {
     </div>
   );
 }
-
-let b = function () {
-  const name = "Extra Module";
-  return name;
-};
-export { b };
