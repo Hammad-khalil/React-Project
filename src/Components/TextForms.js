@@ -5,6 +5,9 @@ export default function TextForms(props) {
     setText("This will update the form input !");
     setText(text.toUpperCase());
   };
+  const handleClearText = () => {
+    setText(" ".trim());
+  };
   const handleLowerClick = () => {
     setText("This will update the form input !");
     setText(text.toLowerCase());
@@ -41,6 +44,13 @@ export default function TextForms(props) {
             className="btn btn-info mt-3 mx-2"
           >
             Convert to Lowercase
+          </button>
+          <button
+            onClick={handleClearText}
+            type="button"
+            className="btn btn-info mt-3 mx-2"
+          >
+            Clear Text
           </button>
         </div>
       </div>
